@@ -11,7 +11,7 @@ Last updated: 2026-10-01
 - They can log out. After logging out, going straight to the tasks page sends them back to the login form.
 
 ## In review
-- Slice 1 (sign up and log in): built in the pull request "Slice 1: sign up and log in". Not merged yet. Check the done-criteria on the preview link before merging.
+- Slice 2 (tagged tasks that stay put): built in the pull request "Slice 2". Not merged yet. Needs the `tasks` table created in Supabase (SQL is in the pull request description) before it works. Check the done-criteria on the preview link before merging.
 
 ## Broken or flaky
 - Nothing known to be broken.
@@ -21,11 +21,11 @@ Last updated: 2026-10-01
 - Slice 1 adds two dependencies: @supabase/supabase-js and @supabase/ssr (approved by the owner).
 - NEXT_PUBLIC_SUPABASE_URL and NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY are set in Vercel (owner confirmed). Not confirmed: whether they are enabled for Preview as well as Production.
 - Email confirmation is turned off in Supabase Auth, so new accounts can sign in straight away.
-- No database tables yet. Auth only.
+- One database table: `tasks` (title, one of the six skills, done yes/no, owner). Row Level Security is on, so each account can only see, add and update its own tasks. No delete rule yet (deleting is in the Backlog). The owner creates it by pasting the SQL from the Slice 2 pull request into the Supabase SQL Editor. Not confirmed yet that it has been run.
 - Live site address: https://ai-workshop-rio-yanagisawa.vercel.app (it shows the old README-only version until the next successful deploy of main).
 - Preview links (one per pull request) are behind Vercel Authentication: you must be logged in to Vercel to open them.
 - Assumed, not confirmed: merging to main triggers a new Vercel deploy.
 
 ## Next session
-- Check Slice 1 on the preview link, then merge.
-- Start Slice 2: tagged tasks that stay put.
+- Run the Slice 2 SQL in Supabase, check Slice 2 on the preview link, then merge.
+- Start Slice 3: skill balance panel.
