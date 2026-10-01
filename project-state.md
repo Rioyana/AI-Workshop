@@ -2,7 +2,7 @@
 Last updated: 2026-10-01
 
 ## Works
-- Next.js site (App Router, TypeScript, plain CSS) is deployed on Vercel.
+- Next.js site (App Router, TypeScript, plain CSS) deploys on Vercel. Fixed 2026-10-01: every deploy since the Next.js site was added had failed because the Vercel project's Framework Preset was "Other". It is now set to Next.js, and the Slice 1 preview builds.
 - A Supabase project exists and is linked to the repo.
 - GitHub repo: Rioyana/AI-Workshop.
 
@@ -18,10 +18,10 @@ Last updated: 2026-10-01
 - NEXT_PUBLIC_SUPABASE_URL and NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY are set in Vercel (owner confirmed). Not confirmed: whether they are enabled for Preview as well as Production.
 - Email confirmation is turned off in Supabase Auth, so new accounts can sign in straight away.
 - No database tables yet. Auth only.
-- The public site address is not recorded yet. https://vercel.com/rio-yanagisawa is the Vercel dashboard, not the live site. Find the address ending in .vercel.app under the project's Domains in Vercel and add it here.
+- Live site address: https://ai-workshop-rio-yanagisawa.vercel.app (it shows the old README-only version until the next successful deploy of main).
+- Preview links (one per pull request) are behind Vercel Authentication: you must be logged in to Vercel to open them.
 - Assumed, not confirmed: merging to main triggers a new Vercel deploy.
 
 ## Next session
 - Check Slice 1 on the preview link, then merge.
-- Record the live site address in this file.
 - Start Slice 2: tagged tasks that stay put.
