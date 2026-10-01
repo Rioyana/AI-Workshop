@@ -5,6 +5,10 @@ Last updated: 2026-10-01
 - Next.js site (App Router, TypeScript, plain CSS) deploys on Vercel. Fixed 2026-10-01: every deploy since the Next.js site was added had failed because the Vercel project's Framework Preset was "Other". It is now set to Next.js, and the Slice 1 preview builds.
 - A Supabase project exists and is linked to the repo.
 - GitHub repo: Rioyana/AI-Workshop.
+- On the live site, a person can create an account with an email address and a password.
+- They can log in with that email and password, and they see "Signed in as" followed by their email.
+- If they type the wrong password, they see an error message and stay on the login form.
+- They can log out. After logging out, going straight to the tasks page sends them back to the login form.
 
 ## In review
 - Slice 1 (sign up and log in): built in the pull request "Slice 1: sign up and log in". Not merged yet. Check the done-criteria on the preview link before merging.
