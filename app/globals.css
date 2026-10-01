@@ -138,3 +138,67 @@ button:disabled {
   color: #b00020;
   margin: 0;
 }
+
+.add-task-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 480px;
+  margin-bottom: 2rem;
+}
+
+.add-task-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.add-task-form input,
+.add-task-form select {
+  font: inherit;
+  padding: 0.5rem;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+}
+
+.task-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2rem;
+}
+
+.task {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.6rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.task input[type="checkbox"] {
+  width: 1.1rem;
+  height: 1.1rem;
+  flex-shrink: 0;
+}
+
+.task-title {
+  flex: 1;
+}
+
+.task.done .task-title {
+  text-decoration: line-through;
+  color: var(--muted);
+}
+
+.skill-label {
+  font-size: 0.85rem;
+  padding: 0.1rem 0.6rem;
+  border-radius: 999px;
+  background: #e6f0f0;
+  color: var(--accent);
+  white-space: nowrap;
+}
+
+.muted {
+  color: var(--muted);
+}
